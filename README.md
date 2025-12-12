@@ -19,3 +19,17 @@ It combines practical skills used in real work:
 - Simple automation pattern: source → transform → publish.
 
 
+## Project Structure
+
+<img width="333" height="871" alt="Folder-Structure" src="https://github.com/user-attachments/assets/971c98f4-cdd7-4fb3-ae31-ef9153e7e130" />
+
+
+## Simple Dashboard
+
+<img width="1915" height="962" alt="Reports-Dashboard" src="https://github.com/user-attachments/assets/cb51f829-8954-47ba-857b-074bef904760" />
+
+
+## Generated Report
+
+<img width="1925" height="1037" alt="Generated-Report" src="https://github.com/user-attachments/assets/9bb7f85e-a853-4ae2-8707-e067cc9138ad" />
+
