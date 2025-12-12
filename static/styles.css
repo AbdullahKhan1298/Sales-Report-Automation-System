@@ -1,0 +1,52 @@
+
+body {
+  background: #f4f6fb;
+  font-family: "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  color: #222;
+  margin: 0;
+  padding: 20px;
+}
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+header {
+  text-align: center;
+  margin-bottom: 20px;
+}
+h1 { margin: 0; font-size: 28px; color: #18202c; }
+.subtitle { margin: 6px 0 0 0; color: #5b6b7b; }
+
+.card {
+  background: #fff;
+  padding: 18px;
+  margin: 18px 0;
+  border-radius: 10px;
+  box-shadow: 0 6px 18px rgba(19,30,55,0.06);
+}
+
+label { display:inline-block; margin-right:8px; font-weight:600; color:#333; }
+select { padding:8px 10px; border-radius:6px; border:1px solid #dfe6ee; margin-right:10px; }
+
+button {
+  background: linear-gradient(180deg,#4a73f3,#3a5de0);
+  color:white;
+  border: 0;
+  padding:10px 14px;
+  border-radius:8px;
+  cursor:pointer;
+  font-weight:600;
+}
+button:hover { opacity:0.95; }
+
+.file-list { list-style:none; padding:0; margin:0; }
+.file-list li { display:flex; justify-content:space-between; align-items:center; padding:8px 0; border-bottom:1px dashed #eef2f7; }
+.fname { color:#2b3b4a; font-weight:600; }
+
+a.btn { background:#2b7cff; color:#fff; padding:8px 10px; border-radius:6px; text-decoration:none; font-weight:600; }
+a.btn.small { padding:6px 8px; font-size:13px; }
+
+.mail-table { width:100%; border-collapse:collapse; }
+.mail-table th, .mail-table td { padding:10px; border-bottom:1px solid #e9eef5; text-align:left; }
+.mail-table th { background:#f7faff; color:#334155; font-weight:700; }
+footer { text-align:center; margin-top:26px; color:#9aa7b4; }

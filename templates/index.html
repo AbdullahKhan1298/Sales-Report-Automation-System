@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Sales Report Dashboard</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>Sales Report Dashboard</h1>
+      <p class="subtitle">Generate monthly PDFs with charts and deliver them to the local inbox.</p>
+    </header>
+
+    <main>
+      <section class="card">
+        <h2>Generate Report</h2>
+        <form action="/generate" method="post">
+          <label for="file">Choose sample file:</label>
+          <select name="file" id="file">
+            {% for f in data_files %}
+              <option value="{{ f }}">{{ f }}</option>
+            {% endfor %}
+          </select>
+          <button type="submit">Generate PDF & Send</button>
+        </form>
+      </section>
+
+      <section class="card">
+        <h2>Generated Reports</h2>
+        {% if reports %}
+          <ul class="file-list">
+            {% for r in reports %}
+              <li>
+                <span class="fname">{{ r }}</span>
+                <a class="btn" href="{{ url_for('download', filename=r) }}">Download</a>
+              </li>
+            {% endfor %}
+          </ul>
+        {% else %}
+          <p>No reports yet. Generate one above.</p>
+        {% endif %}
+      </section>
+
+      <section class="card">
+        <h2>Sent Emails</h2>
+        {% if emails %}
+          <table class="mail-table">
+            <thead><tr><th>ID</th><th>Time</th><th>To</th><th>Subject</th><th>Attachment</th></tr></thead>
+            <tbody>
+            {% for m in emails %}
+              <tr>
+                <td>{{ m.id }}</td>
+                <td>{{ m.timestamp }}</td>
+                <td>{{ m.to }}</td>
+                <td>{{ m.subject }}</td>
+                <td>
+                  {% if m.attachment %}
+                    <a class="btn small" href="{{ url_for('sent_file', filename=m.attachment) }}">{{ m.attachment }}</a>
+                  {% else %}
+                    -
+                  {% endif %}
+                </td>
+              </tr>
+            {% endfor %}
+            </tbody>
+          </table>
+        {% else %}
+          <p>No emails sent yet.</p>
+        {% endif %}
+      </section>
+    </main>
+
+    <footer>
+      <p>Local demo • Sales Report Automation</p>
+    </footer>
+  </div>
+</body>
+</html>
+

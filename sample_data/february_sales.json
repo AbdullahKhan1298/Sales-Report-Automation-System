@@ -1,0 +1,4 @@
+[
+  {"date":"2025-02-01","order_id":"S2001","model":"Honda City","quantity":1,"unit_price":15000,"country":"USA"},
+  {"date":"2025-02-03","order_id":"S2002","model":"Toyota Yaris","quantity":1,"unit_price":10500,"country":"CAN"}
+]

@@ -1,0 +1,6 @@
+Flask==2.3.2
+pandas==2.1.2
+matplotlib==3.8.1
+reportlab>=4.2.0
+requests==2.31.0
+python-dotenv==1.0.0

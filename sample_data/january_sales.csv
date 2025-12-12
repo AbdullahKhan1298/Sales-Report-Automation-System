@@ -1,0 +1,4 @@
+date,order_id,model,quantity,unit_price,country
+2025-01-02,S1001,Toyota Corolla,1,12500,USA
+2025-01-05,S1002,Honda Civic,1,13800,USA
+2025-01-10,S1003,Suzuki Alto,1,8500,PAK

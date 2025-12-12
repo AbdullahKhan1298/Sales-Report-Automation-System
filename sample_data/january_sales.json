@@ -1,0 +1,5 @@
+[
+  {"date":"2025-01-02","order_id":"S1001","model":"Toyota Corolla","quantity":1,"unit_price":12500,"country":"USA"},
+  {"date":"2025-01-05","order_id":"S1002","model":"Honda Civic","quantity":1,"unit_price":13800,"country":"USA"},
+  {"date":"2025-01-10","order_id":"S1003","model":"Suzuki Alto","quantity":1,"unit_price":8500,"country":"PAK"}
+]
